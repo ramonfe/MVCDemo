@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MVCDemo.Models.Post>
+
+@{
+    ViewBag.Title = "ListPosts";
+}
+
+<h2>ListPosts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model) {
+   <p>@item.title</p>
+}
+
